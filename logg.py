@@ -45,6 +45,10 @@ class Logg:
 
             elif log_level == 'exception':
                 self.logger.exception(log_statement)
+            elif log_level == 'info':
+                self.logger.info(log_statement)
+            elif log_level == 'debug':
+                self.logger.debug(log_statement)
 
         except Exception as e:
             raise Exception(e)
